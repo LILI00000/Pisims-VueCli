@@ -2,7 +2,7 @@
   <div id="app">
     <el-container style="height: 100vh; border: 1px solid #eee">
       <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-        <el-menu :default-openeds="['1']" router>
+        <el-menu router>
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-goods"></i>人员管理
@@ -17,8 +17,8 @@
               <i class="el-icon-menu"></i>单位管理
             </template>
             <el-menu-item-group>
-              <el-menu-item index="2-1">选项1</el-menu-item>
-              <el-menu-item index="2-2">选项2</el-menu-item>
+              <el-menu-item index="/Unit">单位查询</el-menu-item>
+              <el-menu-item index="/Unit/Create">新增单位</el-menu-item>
             </el-menu-item-group>            
           </el-submenu>
         </el-menu>
